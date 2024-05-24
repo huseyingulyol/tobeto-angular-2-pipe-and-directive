@@ -1,0 +1,30 @@
+<table>
+  <tr>
+    <td>ID</td>
+    <td>CATEGORY ID</td>
+    <td>UNIT PRICE</td>
+    <td>UNITS IN STOCK</td>
+    <td>REORDER LEVEL</td>
+    <td>DISCONTINUED</td>
+    <td>NAME</td>
+    <td>UPDATE</td>
+    <td>DELETE</td>
+  </tr>
+  <tr *ngFor="let product of ProductList" appHighlight [discontinued]="product.discontinued"
+  [stock]="product.unitsInStock">
+    <td >{{product.id}}</td>
+    <td>{{product.categoryId}}</td>
+    <td>{{product.unitPrice | currency: "TR" : "₺"}}</td>
+    <td>{{product.unitsInStock}}</td>
+    <td>{{product.reorderLevel}}</td>
+    <td> {{product.discontinued | checkBoxPipe }}</td>
+    <td>{{product.name}}</td>
+
+    <td>
+      <button [routerLink]="['/products/update/',product.id]" appButton="dodgerblue" EnterColor="blue">Update</button>
+    </td>
+    <td>
+      <button (click)="removeProduct(product.id)" appButton="red" EnterColor="maroon">Delete</button>
+    </td>
+  </tr>
+</table>

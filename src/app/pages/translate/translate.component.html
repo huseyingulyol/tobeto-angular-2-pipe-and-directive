@@ -1,0 +1,15 @@
+<div class="translator">
+  <label for="languages">Choose a language:</label>
+  
+  <select name="languages" id="languages" (change)="onSelect($event)">
+    <option value="en"> English </option>
+    <option value="tr">Turkish</option>
+    <option value="ru">Russian</option>
+  </select>
+  <div class="scene">
+    <div>
+      <p>{{ 'hello, welcome!' | appTranslate:'en':toLanguage }}</p> <!-- Output: "merhaba, hoşgeldin!" -->
+    </div>
+    
+  </div>
+</div>
