@@ -5,11 +5,12 @@ import { CategoryService } from '../../services/category.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { AppWelcomeDirective } from '../../directives/app-welcome.directive';
+import { AppMultipleDirective } from '../../directives/app-multiple.directive';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatSlideToggleModule,MatTableModule,CommonModule,RouterModule,AppWelcomeDirective],
+  imports: [MatSlideToggleModule,MatTableModule,CommonModule,RouterModule,AppWelcomeDirective,AppMultipleDirective],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
