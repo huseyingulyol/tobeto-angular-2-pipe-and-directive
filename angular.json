@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tobeto-angular-1-form": {
+    "tobeto-angular-2-pipe-and-directive": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/tobeto-angular-1-form",
+            "outputPath": "dist/tobeto-angular-2-pipe-and-directive",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -58,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "tobeto-angular-1-form:build:production"
+              "buildTarget": "tobeto-angular-2-pipe-and-directive:build:production"
             },
             "development": {
-              "buildTarget": "tobeto-angular-1-form:build:development"
+              "buildTarget": "tobeto-angular-2-pipe-and-directive:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "tobeto-angular-1-form:build"
+            "buildTarget": "tobeto-angular-2-pipe-and-directive:build"
           }
         },
         "test": {

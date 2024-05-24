@@ -12,5 +12,5 @@ import { TranslatePipe } from './pipes/translate.pipe';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'tobeto-angular-1-form';
+  title = 'tobeto-angular-2-pipe-and-directive';
 }
